@@ -1,6 +1,6 @@
 @extends('include.layout')
 @section('content')
-<div class="welcome-container">
+<div class="welcome-container container">
     <h1>Welcome to EVUTM</h1>
     <p>This is a simple web application built using Laravel framework.</p>
 </div>
