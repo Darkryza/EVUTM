@@ -9,6 +9,7 @@
     <title>@yield('title','EVUTM')</title>
 </head>
 <body>
+    @include('include.navbar')
     @yield('content')
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
