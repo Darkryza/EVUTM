@@ -12,9 +12,16 @@
     color: var(--white);
 }
 
+body{
+    background: url('../images/bg.png');
+}
+
+.container{
+    padding: 120px 100px 0 100px;
+}
 /* Navbar */
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,14 +57,41 @@ a .logo:hover{
     background-color: var(--maroon);
     color: var(--white);
 }
-
 /* Welcome container */
-.welcome-container {
-    background: url('../images/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+.welcome-container{
     height: 100vh;
-    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.welcome-container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+.left p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2rem;
+}
+/* Step join container */
+.step-join-container{
+    /* padding: 100px 0; */
+    height: 100vh;
+}
+.steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px 0;
+}
+.step img{
+    width: 250px;
 }
