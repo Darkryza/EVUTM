@@ -20,19 +20,19 @@
             </p>
         </div>
         <div class="step">
-            <h2>Step 1</h2>
+            <h2>Step 2</h2>
             <img src="{{ asset('images/gerbang-kelaur.jpg') }}" alt="">
-            <h3>scroll</h3>
+            <h3>tap</h3>
             <p>
-                Find your favourite event that you want to join.
+                Click the poster of event that you chose.
             </p>
         </div>
         <div class="step">
-            <h2>Step 1</h2>
+            <h2>Step 3</h2>
             <img src="{{ asset('images/gerbang-kelaur.jpg') }}" alt="">
-            <h3>scroll</h3>
+            <h3>apply</h3>
             <p>
-                Find your favourite event that you want to join.
+                Click the button to apply as a vendor. Then you need to fill in the form provided.
             </p>
         </div>
     </div>

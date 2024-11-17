@@ -92,6 +92,23 @@ h1{
     gap: 20px;
     padding: 50px 0;
 }
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.step h2{
+    text-transform: uppercase;
+    font-size: 30px;
+}
 .step img{
-    width: 250px;
+    width: 400px;
+}
+.step h3{
+    text-transform: uppercase;
+}
+.step p{
+    text-align: center;
 }
