@@ -68,8 +68,8 @@
 .right form{
     width: 80%;
     background-color: var(--maroon);
-    padding: 50px 20px;
-    border-radius: 10px;
+    padding: 50px 10px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
