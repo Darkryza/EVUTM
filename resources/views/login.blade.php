@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 @section('content')
-<div class="container login-container">
+<div class="login-container">
     <div class="home-button">
         <a href="/">Home</a>
     </div>
@@ -22,7 +22,16 @@
                 TUYIOPGHYJKILTYUGFY
                 FDVGTYHUIFDRGYH</p>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <form action="">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <div class="buttons">
+                    <button>Login</button>
+                    <button>Sign Up</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 @endsection

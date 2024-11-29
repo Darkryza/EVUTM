@@ -1,8 +1,16 @@
+:root{
+    --white: #ffffff;
+    --maroon: #5d001d;
+    --grey: #545454;
+}
 .login-container{
+    padding: 20px 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 20px;
+    height: 100vh;
 }
 .home-button{
     width: 100%;
@@ -11,10 +19,14 @@
 }
 .home-button a{
     padding: 10px;
-    background-color: #545454;
+    background-color: var(--grey);
     color: white;
     text-decoration: none;
     border-radius: 10px;
+    transition: 0.3s ease;
+}
+.home-button a:hover{
+    background-color: #3a3a3a;
 }
 .logo{
     display: flex;
@@ -28,5 +40,67 @@
     border-radius: 10px;
 }
 .login-details{
-    
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.left p{
+    font-size: 20px;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.right form{
+    width: 80%;
+    background-color: var(--maroon);
+    padding: 50px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -150px;
+}
+form input{
+    width: 90%;
+    padding: 20px 50px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+form input::placeholder{
+    text-transform: uppercase;
+}
+form .buttons{
+    display: flex;
+    gap: 30px;
+}
+.buttons button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--grey);
+    padding: 10px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: #2e2e2e;
 }
