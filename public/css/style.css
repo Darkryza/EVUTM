@@ -18,6 +18,7 @@ body{
 
 .container{
     padding: 120px 100px 0 100px;
+    height: 100vh;
 }
 /* Navbar */
 nav{
@@ -57,73 +58,37 @@ a .logo:hover{
     background-color: var(--maroon);
     color: var(--white);
 }
-/* Welcome container */
-.welcome-container{
+/* loader */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-}
-.welcome-container .left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-h1{
-    font-size: 70px;
-    font-weight: 700;
-    text-align: center;
-    padding: 0;
-    text-transform: uppercase;
-}
-.left p{
-    font-size: 20px;
-    text-align: justify;
-    line-height: 2rem;
-}
-.right{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #171616;
+    transition: opacity 0.75s, visibility 0.75s;
 }
-.welcome-images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1.2rem;
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
 }
-.welcome-images img{
-    width: 100%;
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddddd;
+    border-top-color: var(--maroon);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
 }
-/* Step join container */
-.step-join-container{
-    /* padding: 100px 0; */
-    height: 100vh;
-}
-.steps{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    padding: 50px 0;
-}
-.step{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
-.step h2{
-    text-transform: uppercase;
-    font-size: 30px;
-}
-.step img{
-    width: 400px;
-}
-.step h3{
-    text-transform: uppercase;
-}
-.step p{
-    text-align: center;
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
 }

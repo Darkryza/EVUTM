@@ -1,0 +1,32 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.home-button a{
+    padding: 10px;
+    background-color: #545454;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 250px;
+    padding: 10px;
+    background-color: #f9fefa;
+    border-radius: 10px;
+}
+.login-details{
+    
+}

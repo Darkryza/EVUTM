@@ -1,0 +1,65 @@
+/* Welcome container */
+.welcome-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+.welcome-container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+.left p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2rem;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.welcome-images img{
+    width: 100%;
+}
+/* Step join container */
+.step-join-container{
+    height: 100vh;
+}
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 50px 0;
+    align-items: start;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+.step h2, .step img, .step h3, .step p {
+    width: 100%;
+    text-align: center;
+}
+.step h3{
+    text-transform: uppercase;
+}

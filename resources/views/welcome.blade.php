@@ -1,5 +1,9 @@
 @extends('include.layout')
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+@endsection
 @section('content')
+@include('include.navbar')
 <div class="container welcome-container">
     <div class="left">
         <h1>Welcome to EVUTM</h1>
@@ -36,7 +40,7 @@
         <div class="step">
             <h2>Step 3</h2>
             <img src="{{ asset('images/gerbang-kelaur.jpg') }}" alt="">
-            <h3>tap</h3>
+            <h3>apply</h3>
             <p>
                 Click the button to apply as a vendor. Then you need to fill in the form provided.
             </p>
