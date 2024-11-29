@@ -62,6 +62,7 @@ a .logo:hover{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
 }
 .welcome-container .left{
     display: flex;
@@ -81,6 +82,20 @@ h1{
     text-align: justify;
     line-height: 2rem;
 }
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.welcome-images img{
+    width: 100%;
+}
 /* Step join container */
 .step-join-container{
     /* padding: 100px 0; */
@@ -89,7 +104,7 @@ h1{
 .steps{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
     padding: 50px 0;
 }
 .step{
@@ -97,7 +112,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    height: auto;
 }
 .step h2{
     text-transform: uppercase;
