@@ -84,6 +84,8 @@ form input{
     color: black;
     border: none;
     border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 form input::placeholder{
     text-transform: uppercase;
@@ -92,7 +94,8 @@ form .buttons{
     display: flex;
     gap: 30px;
 }
-.buttons button{
+.buttons button,
+.buttons a{
     border: none;
     border-radius: 10px;
     background-color: var(--grey);
@@ -100,7 +103,11 @@ form .buttons{
     font-weight: 700;
     transition: 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
 }
-.buttons button:hover{
+.buttons button:hover,
+.buttons a:hover{
     background-color: #2e2e2e;
 }

@@ -4,6 +4,6 @@
     </a>
     <ul class="nav-links">
         <li><a href="/login">LOGIN</a></li>
-        <li><a href="#">REGISTER</a></li>
+        <li><a href="/register">REGISTER</a></li>
     </ul>
 </nav>

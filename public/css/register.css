@@ -1,0 +1,41 @@
+:root{
+    --white: #ffffff;
+    --maroon: #5d001d;
+    --grey: #545454;
+}
+body{
+    background: linear-gradient(to bottom right, var(--maroon), #b4669d);
+}
+.register-container{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+.home-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.home-button a{
+    padding: 10px;
+    background-color: var(--grey);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.home-button a:hover{
+    background-color: #3a3a3a;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 250px;
+}
