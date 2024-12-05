@@ -20,15 +20,17 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-.home-button a{
+.home-button a, button{
     padding: 10px;
     background-color: var(--grey);
     color: white;
     text-decoration: none;
     border-radius: 10px;
     transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
-.home-button a:hover{
+.home-button a:hover ,button:hover{
     background-color: #3a3a3a;
 }
 .logo{
@@ -39,3 +41,38 @@ body{
 .logo img{
     width: 250px;
 }
+.register-container h1{
+    font-size: 40px;
+}
+
+.register-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+    background-color: var(--maroon);
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.register-container form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.register-container form input::placeholder{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.register-container form button{
+    text-transform: uppercase;
+}
+
