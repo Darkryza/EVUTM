@@ -11,7 +11,7 @@
         <img src="{{ asset('images/UTM-LOGO-FULL.png') }}" alt="">
     </div>
     <h1>E-VENDOR SYSTEM</h1>
-    <form action="">
+    <form action="/register" method="POST">
         @csrf
         <input type="text" name="fullname" id="fullname" placeholder="fullname">
         <input type="text" name="username" id="username" placeholder="username">

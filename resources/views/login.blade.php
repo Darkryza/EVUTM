@@ -23,6 +23,9 @@
                 FDVGTYHUIFDRGYH</p>
         </div>
         <div class="right">
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
             <form action="">
                 <input type="text" name="username" placeholder="username">
                 <input type="password" name="password" placeholder="password">
