@@ -23,10 +23,10 @@
                 FDVGTYHUIFDRGYH</p>
         </div>
         <div class="right">
-            <div class="alert alert-success">
-                {{ session('success') }}
-            </div>
-            <form action="">
+            <form action="/login" method="POST">
+                @if (session()->has('success'))
+                    <div class="alert alert-success">{{ session('success') }}</div>
+                @endif
                 <input type="text" name="username" placeholder="username">
                 <input type="password" name="password" placeholder="password">
                 <div class="buttons">

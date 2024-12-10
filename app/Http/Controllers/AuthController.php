@@ -20,10 +20,10 @@ class AuthController extends Controller
     public function postRegister(Request $request)
     {
         $request->validate([
-            'fullname' => 'required|string',
-            'username' => 'required|string',
-            'email' => 'required|string|email|unique:users',
-            'password' => 'required|string|confirmed'
+            'fullname' => 'required',
+            'username' => 'required',
+            'email' => 'required',
+            'password' => 'required'
         ]);
 
         $user = new User();
