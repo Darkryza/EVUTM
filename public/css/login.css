@@ -1,8 +1,3 @@
-:root{
-    --white: #ffffff;
-    --maroon: #5d001d;
-    --grey: #545454;
-}
 .login-container{
     padding: 20px 100px;
     display: flex;
