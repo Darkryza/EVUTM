@@ -5,7 +5,7 @@
 @section('content')
 <div class="login-container">
     <div class="home-button">
-        <a href="/">Home</a>
+        <a href="/">HOME</a>
     </div>
     <div class="logo">
         <img src="{{ asset('images/UTM-LOGO-FULL.png') }}" alt="">
@@ -30,8 +30,8 @@
                 <input type="text" name="username" placeholder="username">
                 <input type="password" name="password" placeholder="password">
                 <div class="buttons">
-                    <button>Login</button>
-                    <a href="/register">Sign Up</a>
+                    <button>LOGIN</button>
+                    <a href="/register">SIGN UP</a>
                 </div>
             </form>
         </div>

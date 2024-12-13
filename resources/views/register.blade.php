@@ -5,7 +5,7 @@
 @section('content')
 <div class="register-container">
     <div class="home-button">
-        <a href="/">Home</a>
+        <a href="/">HOME</a>
     </div>
     <div class="logo">
         <img src="{{ asset('images/UTM-LOGO-FULL.png') }}" alt="">
