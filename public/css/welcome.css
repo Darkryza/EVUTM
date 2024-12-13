@@ -25,7 +25,7 @@ h1{
     text-transform: uppercase;
 }
 .left p{
-    font-size: 20px;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 2rem;
 }
@@ -57,6 +57,11 @@ h1{
     height: 100%;
     gap: 20px;
 }
+
+.step-join-container h1{
+    font-size: 50px;
+}
+
 .step h2, .step img, .step h3, .step p {
     width: 100%;
     text-align: center;
