@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -36,5 +37,22 @@ class AuthController extends Controller
 
         return redirect('/login')->with('success', 'Register successful');
     }
-    public function postLogin() {}
+    public function postLogin()
+    {
+        validator(request()->all(), [
+            'username' => 'required',
+            'password' => 'required'
+        ])->validate();
+
+        if (Auth::attempt(request()->only('username', 'password'))) {
+            return redirect('/home');
+        }
+
+        return back()->with('error', 'Login failed');
+    }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/login')->with('success', 'Logged out successfully');
+    }
 }

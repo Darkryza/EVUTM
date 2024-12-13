@@ -24,6 +24,7 @@
         </div>
         <div class="right">
             <form action="/login" method="POST">
+                @csrf
                 @if (session()->has('success'))
                     <div class="alert alert-success">{{ session('success') }}</div>
                 @endif
