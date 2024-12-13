@@ -74,5 +74,6 @@
 
 .register-container form button{
     text-transform: uppercase;
+    border-radius: 10px;
 }
 
