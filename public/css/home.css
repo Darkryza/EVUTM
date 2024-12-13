@@ -28,6 +28,11 @@
 .nav-container a:hover{
     background-color: #373737;
 }
+
+.nav-container a.active{
+    background-color: var(--maroon);
+}
+
 .line{
     width: 2px;
     height: 90%;

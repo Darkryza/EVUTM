@@ -11,4 +11,12 @@ class UserController extends Controller
     {
         return view('home');
     }
+    public function profile()
+    {
+        return view('profile');
+    }
+    public function event()
+    {
+        return view('event');
+    }
 }
