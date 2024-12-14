@@ -3,7 +3,7 @@
         <img src="{{ asset('images/UTM-LOGO-FULL.png') }}" class="logo">
     </a>
     <ul class="nav-links">
-        @if (auth())
+        @if (Auth::check())
         <li><a href="/home">Dashboard</a></li>
         @else
         <li><a href="/login">LOGIN</a></li>

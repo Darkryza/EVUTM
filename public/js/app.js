@@ -1,9 +1,16 @@
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
 
-    loader.classList.add("loader-hidden");
+    if (loader) {
+        loader.classList.add("loader-hidden");
 
-    loader.addEventListener("transitionend", () => {
-        loader.parentElement.removeChild(loader);
-    });
+        const onTransitionEnd = () => {
+            if (loader && loader.parentElement) {
+                loader.parentElement.removeChild(loader);
+            }
+            loader.removeEventListener("transitionend", onTransitionEnd);
+        };
+
+        loader.addEventListener("transitionend", onTransitionEnd);
+    }
 });

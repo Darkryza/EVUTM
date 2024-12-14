@@ -17,7 +17,7 @@
     align-items: center;
 } 
 
-h1{
+.left h1, .step-join-container h1{
     font-size: 70px;
     font-weight: 700;
     text-align: center;
